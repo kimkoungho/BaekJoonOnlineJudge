@@ -24,11 +24,12 @@ public class Problem_6549 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		int n;
+		int n; //100,000 
 		while((n=sc.nextInt())!=0) {
 			
 			long[] hist = new long[n];
 			for(int i=0; i<n; i++) {
+				// 1,000,000,000
 				hist[i] = sc.nextLong();
 			}
 			
