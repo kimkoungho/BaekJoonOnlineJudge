@@ -1,19 +1,32 @@
 import java.util.Scanner;
 
 public class Problem_2357 {
-
+	
+	class Range{
+		int start;
+		int end;
+		
+		public Range(int start, int end) {
+			this.start = start;
+			this.end = end;
+		}
+		
+		public int getStart() {
+			return start;
+		}
+		public int getEnd() {
+			return end;
+		}
+	}
+	
+	// fenwick tree 를 이용한 
+	private static void solveFenwickTree(long[] input) {
+		
+	}
+	
 	/**
 10 4
-75
-30
-100
-38
-50
-51
-52
-20
-81
-5
+75 30 100 38 50 51 52 20 81 5
 1 10
 3 5
 6 9
@@ -38,10 +51,6 @@ public class Problem_2357 {
 //		}
 //		
 //		for(int j=0; j<M; j++) {
-//			// 최소값 순서 
-//			long a = sc.nextLong();
-//			// 최대값 순서 
-//			long b = sc.nextLong();
 //			
 //		}
 		
@@ -51,6 +60,47 @@ public class Problem_2357 {
 		long[] arr = new long[] {
 				75, 30, 100, 38, 50, 51, 52, 20, 81, 5
 		};
+		
+		
+		
 	}
 
+}
+interface TreeFunction{
+	
+	void call(long[] tree, int index, long value);
+}
+
+class Fenwick{
+	
+	private long[] tree;
+	
+	private void update(int index, long value) {
+		while(index < tree.length) {
+			//
+			tree[index] = Math.min(tree[index], value);
+			tree[index] = Math.max(tree[index], value);
+			tree[index] += value;
+			//
+			
+			index += (index & -index);
+		}
+	}
+	
+	public void init(long[] input) {
+		tree = new long[input.length];
+		// update
+	}
+	
+	private void search(int index) {
+		long value = 0;
+		while(index > 0) {
+			
+		}
+	}
+	
+	public void search(int start, int end) {
+		
+	}
+	
 }
