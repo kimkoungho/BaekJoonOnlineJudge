@@ -1,8 +1,6 @@
+package Problem_2042;
 import java.util.ArrayList;
 import java.util.Scanner;
-
-import common.FenwickTree;
-import common.SegmentTree;
 
 
 public class Problem_2042 {

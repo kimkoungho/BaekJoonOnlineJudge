@@ -1,3 +1,4 @@
+package Problem_10868;
 import java.util.Scanner;
 
 public class Problem_10868 {
@@ -85,16 +86,7 @@ public class Problem_10868 {
 	}
 	/**
 10 4
-75
-30
-100
-38
-50
-51
-52
-20
-81
-5
+75 30 100 38 50 51 52 20 81 5
 1 10
 3 5
 6 9

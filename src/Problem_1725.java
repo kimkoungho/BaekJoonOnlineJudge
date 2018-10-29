@@ -69,13 +69,7 @@ public class Problem_1725 {
 	
 	/**
 7
-2
-1
-4
-5
-1
-3
-3
+2 1 4 5 1 3 3
 
 8
 	 */
@@ -103,6 +97,7 @@ public class Problem_1725 {
 		return -1;
 	}
 	
+	// 펜윅트리 2개 
 
 	
 }

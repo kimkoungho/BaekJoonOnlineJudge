@@ -1,4 +1,4 @@
-package common;
+package Problem_2042;
 
 public class SegmentTree {
 
