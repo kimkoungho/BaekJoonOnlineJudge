@@ -1,9 +1,12 @@
+package Problem_1725;
 import java.util.Scanner;
 import java.util.Stack;
+
 
 /*  히스토그램에서 가장 큰 막대를 출력
  *  
 */
+
 public class Problem_1725 {
 	
 	// 스택을 이용한 풀이  
@@ -77,27 +80,27 @@ public class Problem_1725 {
 		Scanner sc = new Scanner(System.in);
 		
 		// 1 ~ 100,000
-//		int N = sc.nextInt(); 
-//		int []arr = new int[N];
-//		for(int i=0; i<N; i++) {
-//			arr[i] = sc.nextInt();
-//		}
+		int N = sc.nextInt(); 
+		int []arr = new int[N];
+		for(int i=0; i<N; i++) {
+			arr[i] = sc.nextInt();
+		}
 		
 //		int N = 7;
 //		int[] arr = new int[] {2, 1, 4, 5, 1, 3, 3};
-		int[] arr = new int[] {1, 4, 3, 4, 1, 3, 3};
+//		int[] arr = new int[] {1, 4, 3, 4, 1, 3, 3};
 		
-		System.out.println(stackSolve(arr));
+//		System.out.println(stackSolve(arr));
+		System.out.println(segmentTreeSolve(arr));
 	}
 	
 	
 	// 세그먼트 트리 이용 
 	private static int segmentTreeSolve(int[] arr) {
 		
-		return -1;
+		SegmentTree tree = new SegmentTree(arr);
+		
+		return tree.getMaxArea(0, arr.length-1);
 	}
-	
-	// 펜윅트리 2개 
-
 	
 }
