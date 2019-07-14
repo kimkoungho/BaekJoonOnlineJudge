@@ -1,4 +1,4 @@
-package Problem_10868;
+package problem_10868;
 import java.util.Scanner;
 
 public class Problem_10868 {

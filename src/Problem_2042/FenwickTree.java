@@ -1,4 +1,4 @@
-package Problem_2042;
+package problem_2042;
 
 public class FenwickTree {
 	/** 팬윅 트리를 저장할 1차원 배열 */

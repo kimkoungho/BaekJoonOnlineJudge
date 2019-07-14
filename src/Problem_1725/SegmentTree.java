@@ -1,4 +1,4 @@
-package Problem_1725;
+package problem_1725;
 
 // 히스토그램에서 구간의 최소값 을 저장  
 class SegmentTree {
